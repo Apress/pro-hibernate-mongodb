@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>@EntityListeners / @ExcludeDefaultListeners / @ExcludeSuperclassListeners</title>
+    </h:head>
+    <h:body>
+        <h1>@EntityListeners / @ExcludeDefaultListeners / @ExcludeSuperclassListeners</h1>
+        <h2>Persist operations ...</h2>
+        <h:panelGrid columns="2">
+            <h:form>           
+                <h:commandButton action="#{bean.persistTenisPlayerAction()}" value="Insert Tennis Player"/>            
+            </h:form>
+            <h:form>           
+                <h:commandButton action="#{bean.persistBaseballPlayerAction()}" value="Insert Baseball Player"/>            
+            </h:form>
+        </h:panelGrid>
+        <h2>Load operations ...</h2>
+        <h:panelGrid columns="2">
+            <h:form>           
+                <h:commandButton action="#{bean.loadFirstTennisPlayer()}" value="Load First Tennis Player"/>            
+            </h:form>           
+            <h:form>           
+                <h:commandButton action="#{bean.loadFirstBaseballPlayer()}" value="Load First Baseball Player"/>            
+            </h:form>
+        </h:panelGrid>
+        <h2>Merge operations ...</h2>
+        <h:panelGrid columns="2">
+            <h:form>           
+                <h:commandButton action="#{bean.updateFirstTennisPlayer()}" value="Update First Tennis Player"/>            
+            </h:form>           
+            <h:form>           
+                <h:commandButton action="#{bean.updateFirstBaseballPlayer()}" value="Update First Baseball Player"/>            
+            </h:form> 
+        </h:panelGrid>
+        <h2>Delete operations ...</h2>
+        <h:panelGrid columns="2">
+            <h:form>           
+                <h:commandButton action="#{bean.deleteFirstTennisPlayer()}" value="Remove First Tennis Player"/>            
+            </h:form>           
+            <h:form>           
+                <h:commandButton action="#{bean.deleteFirstBaseballPlayer()}" value="Remove First Baseball Player"/>            
+            </h:form>
+        </h:panelGrid>
+    </h:body>
+</html>
+

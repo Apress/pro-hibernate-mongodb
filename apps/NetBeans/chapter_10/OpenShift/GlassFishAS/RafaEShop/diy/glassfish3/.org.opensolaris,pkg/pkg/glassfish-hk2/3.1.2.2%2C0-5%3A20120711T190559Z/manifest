@@ -1,0 +1,16 @@
+set name=fmri value=pkg:/glassfish-hk2@3.1.2.2,0-5:20120711T190559Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Hundred Kilobytes Kernel (HK2) is a module subsystem coupled with a simple yet powerful component model to build software. For more information, see https://hk2.dev.java.net/.   GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value=HK2
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file b2aa5b3991d9f877d8dc5f327b98d179aa0bc33d chash=d9d81d4cdc501fe02e8f071c39bbaa538e9b2999 group=sys mode=0644 owner=root path=glassfish/modules/config.jar pkg.csize=145581 pkg.size=160257
+file 3ee9272b1845f9575bf8e65c5f801f6f3dc7fba2 chash=e090834517f64c6e8923366615c5183ad4279109 group=sys mode=0644 owner=root path=glassfish/modules/auto-depends.jar pkg.csize=257717 pkg.size=293698
+file 0b8682b0eb4cca22db52ef0c649a69a1d522f703 chash=77bc1857ef42581ebed0be1ce04c78bc5038b9ea group=sys mode=0644 owner=root path=glassfish/modules/asm-all-repackaged.jar pkg.csize=97831 pkg.size=107327
+file 9e10be40ddefeb6943cb14591c49822b59fb0f22 chash=1f65ab7c2939998792199d728a39006cf5e02024 group=sys mode=0644 owner=root path=glassfish/modules/jboss-logging.jar pkg.csize=54444 pkg.size=60234
+file 1b290b1fbb3efb7b64e9926e44c5af1a1b57a7fb chash=2818e02fb85df510b23970845c8a4846d1a5e60f group=sys mode=0644 owner=root path=glassfish/modules/bean-validator.jar pkg.csize=489316 pkg.size=566845
+file af38f0482f4e49ff87b8f0855c80d31df00a0cbd chash=d99c2bf69b527c958ca5d5c61571b27e6abb9934 group=sys mode=0644 owner=root path=glassfish/modules/hk2.jar pkg.csize=2536 pkg.size=3151
+file 8107c76ac8baa3f00fa6c3f2e2f15c15f5fc9f00 chash=f1e8186f87d7159f9bd60cff23765821f8965fc2 group=sys mode=0644 owner=root path=glassfish/modules/hk2-core.jar pkg.csize=107723 pkg.size=120085
+file acc0ad5faf7b74bacb1112fa4cf88726831339b1 chash=1b9fa633fa427df423998a22c82eed46f381abfd group=sys mode=0644 owner=root path=glassfish/modules/osgi-resource-locator.jar pkg.csize=16954 pkg.size=20017
+set name=publisher value=stable.glassfish.org

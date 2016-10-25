@@ -1,0 +1,13 @@
+set name=fmri value=pkg:/felix@4.0.2,0-0:20120711T190535Z
+set name=info.classification value="OSGi Service Platform Release 4"
+set name=pkg.description value="Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services, as well as providing and supporting other interesting OSGi-related technologies. For more information, see: http://felix.apache.org/site/index.html."
+set name=pkg.summary value="Apache Felix"
+file 2d1d15c97e6293a77ab36068ca810220dd9f4218 chash=00672968d462099d5fb1c97c29c8c5e3e2c5cf22 group=sys mode=0644 owner=root path=glassfish/modules/autostart/org.apache.felix.fileinstall-autodeploy-bundles.cfg pkg.csize=1147 pkg.size=2382 preserve=renameold
+file c4a722f4c9a4b6baef0b791e2df334b69e83085b chash=19088dff0cd24c5d5546944c89d469213286094a group=sys mode=0644 owner=root path=glassfish/config/osgi.properties pkg.csize=4986 pkg.size=15511 preserve=renameold
+license be86a8dd962083a273ca3800af37cf2cb63d6f8b chash=eb0e8e735c1496a40ea6599e83a5ead93f900343 license=ApacheV2 pkg.csize=3964 pkg.size=11324
+dir group=sys mode=0755 owner=root path=glassfish/osgi/felix/conf
+dir group=sys mode=0755 owner=root path=glassfish/osgi/felix/bin
+file 14f630edf137f54188636b5139432986d5fb19b7 chash=e302163a61acc37c2d7085c96a6298524905391a group=sys mode=0644 owner=root path=glassfish/osgi/felix/bin/felix.jar pkg.csize=456731 pkg.size=493190
+dir group=sys mode=0755 owner=root path=glassfish/modules
+dir group=sys mode=0755 owner=root path=glassfish/modules/autostart
+set name=publisher value=stable.glassfish.org

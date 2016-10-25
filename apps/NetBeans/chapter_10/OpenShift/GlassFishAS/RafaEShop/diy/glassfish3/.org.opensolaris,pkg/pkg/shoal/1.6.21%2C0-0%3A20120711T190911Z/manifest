@@ -1,0 +1,10 @@
+set name=fmri value=pkg:/shoal@1.6.21,0-0:20120711T190911Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Glassfish Group Management Service provides the dynamic clustering framework for GlassFish. GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Group Management Service"
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 0e6b29685e2ce126a9ac10ea91ce11936c7d58d7 chash=86c4d81a790b0f2218c644e4826b0e82fd37042a group=sys mode=0644 owner=root path=glassfish/modules/shoal-cache.jar pkg.csize=155509 pkg.size=168889
+file 1cba035d4d718f05ee45f4128adc1b5aa9ad8ea5 chash=d82956798fa138e3c36b5294307c355e48acf4f4 group=sys mode=0644 owner=root path=glassfish/modules/shoal-gms-impl.jar pkg.csize=364612 pkg.size=392848
+set name=publisher value=stable.glassfish.org

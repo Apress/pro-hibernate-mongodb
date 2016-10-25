@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ascii"?>
+<history><client name="pkg" version="1.122.2-56.2852"><args><arg><![CDATA[/BUILD_AREA/tools/2.3-b56-toolkit/pkg-toolkit-sunos-i386/pkg/bin/client.py]]></arg><arg><![CDATA[install]]></arg><arg><![CDATA[mq-bin-exe]]></arg></args></client><operation end_time="20120711T194243Z" name="install" result="Succeeded" start_time="20120711T194242Z" userid="0" username="root"><start_state><![CDATA[UNEVALUATED:
++pkg:/mq-bin-exe@4.5.2,0-3.4:20120607T215339Z
+]]></start_state><end_state><![CDATA[None -> pkg:/mq-bin-exe@4.5.2,0-3.4:20120607T215339Z
+]]></end_state></operation></history>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <display-name>HOGMviaJPA_EE_GlassFish-ear</display-name>
+  <module>
+    <ejb>HOGMviaJPA_EE_GlassFish-ejb-1.0.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>HOGMviaJPA_EE_GlassFish-web-1.0.war</web-uri>
+      <context-root>/HOGMviaJPA_EE_GlassFish-web</context-root>
+    </web>
+  </module>
+  <library-directory>lib</library-directory>
+</application>

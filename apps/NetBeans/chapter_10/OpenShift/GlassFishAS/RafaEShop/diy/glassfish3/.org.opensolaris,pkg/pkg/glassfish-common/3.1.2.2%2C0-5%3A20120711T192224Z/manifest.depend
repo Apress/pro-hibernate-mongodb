@@ -1,0 +1,3 @@
+depend fmri=pkg:/glassfish-nucleus type=require
+depend fmri=pkg:/glassfish-corba-base type=require
+depend fmri=pkg:/glassfish-grizzly-full type=require

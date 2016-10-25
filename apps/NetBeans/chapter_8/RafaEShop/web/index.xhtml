@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <script src="resources/js/js.js"/>    
+        <link rel="stylesheet" href="./resources/css/generic.css"/>
+        <style>
+            .ui-panelgrid td {
+                vertical-align: top;
+            }
+
+            .ui-datatable .ui-datatable-data td, .ui-datatable .ui-datatable-data-empty td {
+                border-style:hidden;
+            }
+        </style>
+        <title>Rafael Nadal E-Shop</title>
+
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">
+            <p:layoutUnit position="center" resizable="false">             
+                <p:panel style="margin-bottom: 10px;">                   
+                    <h:panelGrid columns="2" width="100%" border="0">
+                        <h:panelGrid columns="2" width="100%" border="0">
+                            <p:ajaxStatus style="width:25px;height:25px;">
+                                <f:facet name="start">
+                                    <h:graphicImage value="./resources/images/ajax-loading.gif" />
+                                </f:facet>
+                                <f:facet name="complete">
+                                    <h:outputText value="" />
+                                </f:facet>
+                            </p:ajaxStatus>
+                            Welcome, Guest!                            
+                        </h:panelGrid>
+                        <h:panelGrid columns="2" width="100%" border="0" style="text-align:right;">
+                            <h:form id="searchProductFormId">
+                                <h:inputText value="#{cp.search}"/>
+                                <p:spacer width="10" height="10" />
+                                <p:commandButton value="Search" actionListener="#{cp.searchProductsAction()}" onstart="clearCookies();" ajax="true" update=":productsFormId" icon="ui-icon-search"/>
+                            </h:form>
+                            <h:form id="cartId">
+                                (<h:outputText value="#{cart.products_nr}"/> products)
+                                <h:outputText value="#{cart.payment}">
+                                    <f:convertNumber maxFractionDigits="2" type="currency" currencyCode="USD" />
+                                </h:outputText>
+                                <p:commandLink process="@none" update=":cartDialogId" oncomplete="cartDialog.show();">
+                                    <p:graphicImage value="resources/images/basket.png" width="20" height="20"/>
+                                </p:commandLink>
+                            </h:form>
+                        </h:panelGrid>
+                    </h:panelGrid>
+                </p:panel>
+
+                <p:growl id="logId"/>                
+                <p:panelGrid columns="2" style="width:100%; vertical-align:top; text-align: center;">
+                    <p:panel>
+                        <h:form>
+                            <h:panelGrid columns="1" style="vertical-align: top; border-style: hidden; padding: 0px; width:100%;">
+                                <p:dataTable value="#{cp.extractCategoriesAction()}" var="t" emptyMessage="No categories found ..." style="width:100%;">
+                                    <p:column headerText="Select a category">
+                                        <p:commandLink value="#{t[1]}" actionListener="#{cp.extractProductsAction()}" onclick="changeCategory('#{t[0]}');" ajax="true" update=":productsFormId" />
+                                    </p:column>                            
+                                </p:dataTable>
+                            </h:panelGrid>
+                        </h:form>
+                    </p:panel>
+                    <p:panel id="productsTableId">
+                        <h:form id="productsFormId">
+                            <p:dataTable id="productsCarousel" value="#{cp.products}" emptyMessage="No products found ..." var="v">
+                                <p:column headerText="Product Name and Description">
+                                    <p:panelGrid columns="1" style="border-style: hidden;">
+                                        <p:panelGrid columns="2" style="border-style: hidden;">
+                                            <p:panelGrid columns="1" style="border-style: hidden; text-align: left;">
+                                                <h:outputText id="nameId" value="#{v.product}" style="color:#30b80e; font-size: 25px;"/>
+                                            </p:panelGrid>
+                                            <p:panelGrid columns="2" style="border-style: hidden; text-align: right;">
+                                                <h:outputText id="priceId" value="#{v.price}" style="font-size: 30px; color:#cc0000;">
+                                                    <f:convertNumber maxFractionDigits="2" type="currency" currencyCode="USD" />
+                                                </h:outputText>  
+                                                <c:set var="p" value="#{v.old_price}"/>
+                                                <c:set var="p" value="${fn:replace(p, '0.0', '')}"/>
+                                                <del style="font-size: 14px; color:#000000;">${p}</del>                                                                                                                                                    
+                                            </p:panelGrid>
+                                        </p:panelGrid>
+                                        <p:panel>
+                                            <p:panelGrid columns="6" style="border-style: hidden; text-align: left;">
+                                                <h:outputText value="Size:" style="font-size: 15px; color: #cc0000;"/>
+                                                <p:selectOneMenu id="sizeId" style="width:100px;">
+                                                    <f:selectItem itemLabel="Unavailable" itemValue="" itemDisabled="true" />
+                                                    <f:selectItems value="#{v.sizes}" />
+                                                </p:selectOneMenu>
+                                                <h:outputText value="Color:" style="font-size: 15px; color: #cc0000;"/>
+                                                <p:selectOneMenu id="colorId" style="width:100px;">
+                                                    <f:selectItem itemLabel="Unavailable" itemValue="" itemDisabled="true" />
+                                                    <f:selectItems value="#{v.colors}"/>
+                                                </p:selectOneMenu>    
+                                                <h:outputText value="Quantity:" style="font-size: 15px; color: #cc0000;"/>
+                                                <p:selectOneMenu id="quantityId" style="width:100px;">
+                                                    <f:selectItem itemLabel="1" itemValue="1" />
+                                                    <f:selectItem itemLabel="2" itemValue="2" />
+                                                    <f:selectItem itemLabel="3" itemValue="3" />
+                                                    <f:selectItem itemLabel="4" itemValue="4" />
+                                                    <f:selectItem itemLabel="5" itemValue="5" />
+                                                </p:selectOneMenu>                                                
+                                            </p:panelGrid>
+                                            <p:panelGrid columns="1" style="border-style: hidden; text-align: center;">
+                                                <p:panel style="border:none;">
+                                                    <p:commandButton id="addtocartId" value="Add To Cart" type="button" process="@none" onclick="addToCart(this.id, '#{v.sku}', '#{v.product}', '#{v.price}');" style="width:150px;"/>
+                                                </p:panel>
+                                            </p:panelGrid>
+                                        </p:panel>                                                                                
+                                        <p:panel style="border:none;">
+                                            <p:panelGrid columns="1" style="border-style: hidden; text-align: left;">
+                                                <h:outputText value="Product Description:" style="font-size: 14px; font-weight: bold; color: #000000;"/>
+                                                <h:outputText value="#{v.description}" style="font-size: 11px; font-weight: bold; color: #000000;"/>
+                                            </p:panelGrid> 
+                                            <p:panel style="border:none;">
+                                                <p:panelGrid columns="1" style="border-style: hidden; text-align: left;">
+                                                    <h:outputText value="More details: " style="font-size: 14px; font-weight: bold; color: #000000;"/>
+                                                    <h:outputText value="..............................................................." style="font-size: 11px; font-weight: bold; color: #000000;"/>
+                                                </p:panelGrid> 
+                                            </p:panel>  
+                                        </p:panel>                                                                   
+                                    </p:panelGrid>
+                                </p:column>
+                                <p:column headerText="Product Gallery">     
+                                    <p:lightBox styleClass="imagebox">                                           
+                                        <ui:repeat value="#{v.gallery}" var="image">                                          
+                                            <h:outputLink value="resources/images/#{image}" title="#{v.product}">  
+                                                <h:graphicImage value="resources/images/#{image}" width="90" height="90"/>  
+                                            </h:outputLink>                   
+                                        </ui:repeat> 
+                                    </p:lightBox>                                     
+                                </p:column>
+                            </p:dataTable>
+                        </h:form>
+                        <a id="prevId" href="#" onclick="previousPage();" style="visibility: hidden">Previous Page</a>
+                        <span id="pageOfTotalId"></span>
+                        <a id="nextId" href="#" onclick="nextPage();" style="visibility: hidden">Next Page</a>
+                    </p:panel>
+                </p:panelGrid>                
+                <h:form id="itemFormId">
+                    <h:inputHidden id="hiddenSkuId" value="#{cart.p_sku}"/>
+                    <h:inputHidden id="hiddenNameId" value="#{cart.p_name}"/>
+                    <h:inputHidden id="hiddenPriceId" value="#{cart.p_price}"/>
+                    <h:inputHidden id="hiddenSizeId" value="#{cart.p_size}"/>
+                    <h:inputHidden id="hiddenColorId" value="#{cart.p_color}"/>
+                    <h:inputHidden id="hiddenQuantityId" value="#{cart.p_quantity}"/>
+                    <p:commandButton id="itemBtnId" actionListener="#{cart.addToCartAction()}" ajax="true" update=":logId,:cartId" style="visibility: hidden; color:transparent; width:0px; height:0px;"/>
+                </h:form>
+                <h:form id="pageFormId">
+                    <p:commandButton id="pageFormBId" actionListener="#{cp.extractProductsAction()}" ajax="true" update=":productsFormId" style="visibility: hidden; color:transparent; width:0px; height:0px;"/>
+                </h:form>
+            </p:layoutUnit>
+        </p:layout>
+
+        <p:dialog id="cartDialogId" appendToBody="true" closable="true" modal="true" position="center" header="Your Shopping Cart" widgetVar="cartDialog" width="920" showEffect="clip" hideEffect="fold" resizable="false" visible="false">
+            <p:panel>
+                <h:panelGrid columns="2" cellpadding="8" style="text-align:left;">
+                    <p:scrollPanel style="width:750px;height:400px">
+                        <h:form id="formCartId">
+                            <p:dataTable id="cartTableId" value="#{cart.shopping_cart}" var="t" rowIndexVar="rowIndex">
+                                <p:column headerText="#">
+                                    #{rowIndex+1}.
+                                </p:column>
+                                <p:column headerText="Products in Your Cart">
+                                    #{t}
+                                </p:column>
+                                <p:column headerText="Remove">
+                                    <p:commandButton value="Remove" actionListener="#{cart.removeFromCartAction(t)}" ajax="true" update=":logId,:cartId,:formCartId:cartTableId,:paymentId" style="width:100px;" icon="ui-icon-circle-close"/>
+                                </p:column>                            
+                            </p:dataTable>
+                        </h:form>    
+                    </p:scrollPanel>
+                    <h:outputText id="paymentId" value="#{cart.payment}" style="font-size:20px; font-weight: bold; color: #00cc00;">
+                        <f:convertNumber maxFractionDigits="2" type="currency" currencyCode="USD" />
+                    </h:outputText>
+                    <p:panel>
+                        Shipping Address:
+                        <h:form id="orderFormId">
+                            <h:panelGrid columns="8">
+                                City: <h:inputText value="#{cart.city}"/>
+                                State: <h:inputText value="#{cart.state}"/>
+                                Street: <h:inputText value="#{cart.street}"/>
+                                Number: <h:inputText value="#{cart.number}"/>
+                                Zip: <h:inputText value="#{cart.zip}"/>
+                                Country: <h:inputText value="#{cart.country}"/>
+                                Phone: <h:inputText value="#{cart.phone}"/>
+                                Fax: <h:inputText value="#{cart.fax}"/>
+                            </h:panelGrid>
+                            <p:commandButton value="Purchace Order" actionListener="#{cart.saveOrderAction()}" ajax="true" onstart="cartDialog.hide();" update=":logId,:cartId"/>
+                        </h:form>
+                    </p:panel>
+                </h:panelGrid>
+            </p:panel>
+            <p:panel style="border:none;">
+                <h:panelGrid columns="1" width="100%" style="text-align: right">
+                    <h:form>
+                        <p:commandButton value="Close" process="@none" onclick="cartDialog.hide();"/>
+                    </h:form>
+                </h:panelGrid>
+            </p:panel>
+        </p:dialog>
+    </h:body>
+</html>
+

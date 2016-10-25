@@ -1,0 +1,19 @@
+set name=fmri value=pkg:/glassfish-full-incorporation@3.1.2.2,0-5:20120711T192230Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish Full Platform Incorporation Package.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Full Platform Incorporation"
+depend fmri=pkg:/mq-locale@4.5 type=incorporate
+depend fmri=pkg:/glassfish-appclient@3.1.2.2,0-5 type=incorporate
+depend fmri=pkg:/glassfish-corba@3.1.0,0-32 type=incorporate
+depend fmri=pkg:/glassfish-jms@3.1.2.2,0-5 type=incorporate
+depend fmri=pkg:/mq-server@4.5 type=incorporate
+depend fmri=pkg:/metro@2.2,0-13.1 type=incorporate
+depend fmri=pkg:/glassfish-cmp@3.1.2.2,0-5 type=incorporate
+depend fmri=pkg:/mq-bin-exe@4.5 type=incorporate
+depend fmri=pkg:/glassfish-ejb@3.1.2.2,0-5 type=incorporate
+depend fmri=pkg:/glassfish-web-incorporation@3.1.2.2,0-5 type=require
+depend fmri=pkg:/mq-config-gf@4.5 type=incorporate
+depend fmri=pkg:/mq-bin-sh@4.5 type=incorporate
+depend fmri=pkg:/glassfish-common-full@3.1.2.2,0-5 type=incorporate
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+set name=publisher value=stable.glassfish.org

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hogm.hnapi.pojo.Players" table="atp_players">
+        <id name="id" type="string">
+            <column name="id" />
+            <generator class="uuid2" />
+        </id>
+        <property name="name" type="string">
+            <column name="player_name"/>
+        </property>        
+        <property name="surname" type="string">
+            <column name="player_surname"/>
+        </property> 
+        <property name="age" type="int">
+            <column name="player_age"/>
+        </property> 
+        <property name="birth" type="date">
+            <column name="player_birth"/>
+        </property> 
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="hogm.hnapi.pojo.Tournaments" table="atp_tournaments">
+        <id name="id" type="string">
+            <column name="tournaments_id" />
+            <generator class="uuid2" />
+        </id>
+        <property name="tournament" type="string">
+            <column name="tournament"/>
+        </property>               
+        <bag name="players" inverse="true" lazy="false" table="players_tournaments">
+            <key column="tournaments_id"/>    
+            <many-to-many column="players_id" class="hogm.hnapi.pojo.Players"/>
+        </bag>
+    </class>
+</hibernate-mapping>

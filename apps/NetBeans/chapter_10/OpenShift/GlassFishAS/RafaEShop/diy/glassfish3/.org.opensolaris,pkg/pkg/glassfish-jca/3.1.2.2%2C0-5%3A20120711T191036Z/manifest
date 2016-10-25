@@ -1,0 +1,40 @@
+set name=fmri value=pkg:/glassfish-jca@3.1.2.2,0-5:20120711T191036Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish connector and connection pooling module provides runtime infrastructure to use resource-adapters in GlassFish. For more information on Java EE Connector Architecture (JCA), please refer to http://java.sun.com/j2ee/connector/.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish JCA"
+depend fmri=pkg:/glassfish-jta type=require
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+dir group=sys mode=0755 owner=root path=glassfish/lib
+file a5b0d4d9dd5a692684765a3c953d5165f616b330 chash=b3ea602d99e9d4942e7a6d86f989198ec2daad30 group=sys mode=0644 owner=root path=glassfish/modules/console-jca-plugin.jar pkg.csize=116515 pkg.size=123047
+file 7cb4e195f3e677d1447290bda4dca4f8ec9d38a6 chash=1d0b50310fc9b7340a078432fbfb3ea0f7061e5e group=sys mode=0644 owner=root path=glassfish/modules/connectors-runtime.jar pkg.csize=487715 pkg.size=522820
+file 9b9ea55f33f11c2b0be32383178e15c56cec042e chash=5e47fb3d80fbb0a4e0db1beb75f9855171339bf4 group=sys mode=0644 owner=root path=glassfish/modules/work-management.jar pkg.csize=36212 pkg.size=39945
+file d98dafbf5e798f84bf2bc735e92fc60153eead40 chash=43995b2da04abef52a3f064787e6a7cd45d544d1 group=sys mode=0644 owner=root path=glassfish/modules/console-jca-plugin-help.jar pkg.csize=61742 pkg.size=69676
+file c259b6209d8e20bbb2cfe2317f469196bc605749 chash=b88cce4d1aa732c707e442ddb4c4171bc0e47966 group=sys mode=0644 owner=root path=glassfish/modules/glassfish-ee-api.jar pkg.csize=7378 pkg.size=9146
+file 79918c394646f5c3b4e09e63a90fac8db9340ed2 chash=6f68c684c438d6c097359ca5e8fc2eff0af3b6c7 group=sys mode=0644 owner=root path=glassfish/modules/connectors-admin.jar pkg.csize=201904 pkg.size=221910
+file 03b87c511af7923e9ce3bbe004122df67667f989 chash=a8dc8d8f36a9a980dbfcb6c52ae468e364a82eab group=sys mode=0644 owner=root path=glassfish/modules/gf-connectors-connector.jar pkg.csize=9143 pkg.size=11431
+dir group=sys mode=0755 owner=root path=glassfish/lib/schemas
+dir group=sys mode=0755 owner=root path=glassfish/lib/install
+dir group=sys mode=0755 owner=root path=glassfish/lib/dtds
+file 407873195c148da776b77f9260af1dd32fa80bc8 chash=94a62efdcece9ca7db55dd66a31a9149d146149a group=sys mode=0644 owner=root path=glassfish/lib/schemas/connector_1_6.xsd pkg.csize=7263 pkg.size=47635
+file 30aa5d6011e91d6ba9036e7ad8a27acdaac19828 chash=9cb3b751db68396b638adbebac2f6940b7afcc43 group=sys mode=0644 owner=root path=glassfish/lib/schemas/connector_1_5.xsd pkg.csize=5874 pkg.size=31811
+dir group=sys mode=0755 owner=root path=glassfish/lib/install/templates
+dir group=sys mode=0755 owner=root path=glassfish/lib/install/templates/resources
+dir group=sys mode=0755 owner=root path=glassfish/lib/install/templates/resources/custom
+file ec5a97dec3d3847a1b08229724d5a7f69ee31711 chash=bed474cbdc4b5e9e9d7fc762956f4ed9857d2b79 group=sys mode=0644 owner=root path=glassfish/lib/install/templates/resources/custom/url_custom-resource.xml pkg.csize=1801 pkg.size=4411
+file c034bc431cf0a5a03d1faba2b9a06acc1d8834a6 chash=87fead24c190a4356954ee3e3db2aef1846bc8e1 group=sys mode=0644 owner=root path=glassfish/lib/install/templates/resources/custom/properties_custom_resource.xml pkg.csize=2016 pkg.size=5754
+file aa26b36b6341de87358376988a0a24f5bbe3d24e chash=17ca69a489986037678836846f3efb1dbfab666d group=sys mode=0644 owner=root path=glassfish/lib/install/templates/resources/custom/primitives_string_custom_resource.xml pkg.csize=1787 pkg.size=4192
+file c751ab1cee1e5782bbe3c251f70c20b3dd5d544b chash=5e88fd246f8f1f9a933e49a0cf025802340a78a8 group=sys mode=0644 owner=root path=glassfish/lib/install/templates/resources/custom/javabean_custom_resource.xml pkg.csize=1874 pkg.size=4501
+file 0366e01c6e46325dd6cd441ef3889df270a06648 chash=56b76b4d34eb47c2a5e9e993c6b1e7be48216075 group=sys mode=0644 owner=root path=glassfish/lib/install/templates/resources/custom/README pkg.csize=1490 pkg.size=3294
+file 4609195b99dc8e757c43aab871efc1c298ba965e chash=1fed1d02ef88196e1e0852bc42fc8e999cca516f group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-resources_1_4.dtd pkg.csize=8408 pkg.size=41771
+file 926d34139ec55b83f6537c689a34eb88d7b76910 chash=5c7733a953fd041519d462ac067787906dc0c46e group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-resources_1_3.dtd pkg.csize=7338 pkg.size=37840
+file 6ec84a6233193d415a34954eda574555f9d63c0e chash=8eb245ba84dfeb23581aa5aea422e6acec7a2cfa group=sys mode=0644 owner=root path=glassfish/lib/dtds/connector_1_0.dtd pkg.csize=4677 pkg.size=17991
+file db3d56ad6dcd19242ff02e9fa77dfca91e1bfc3d chash=56597350bfe46741c40f82ef0b078f6aa2b4e44b group=sys mode=0644 owner=root path=glassfish/lib/dtds/glassfish-resources_1_5.dtd pkg.csize=8967 pkg.size=43775
+file 36e81dd5c5cdeba65c16c7860d43bf71cd25f3c2 chash=e135d5209c09d8e5231c9f34cb6a3df8a43fb819 group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-connector_1_0-0.dtd pkg.csize=2039 pkg.size=4865
+file 49e787e3b1d283ea04555a9f59ddb2f7eb8a798b chash=fba794dda1c58191ae4887d3efc770ebe6cdb067 group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-connector_1_5-0.dtd pkg.csize=1958 pkg.size=4703
+file de39894e1b20fe45593529c2cc2eee3ab82e7f33 chash=0c3c4fda5c5379a78b14053d0ffd173d116815f7 group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-resources_1_0.dtd pkg.csize=6328 pkg.size=29897
+file de39894e1b20fe45593529c2cc2eee3ab82e7f33 chash=0c3c4fda5c5379a78b14053d0ffd173d116815f7 group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-resources_1_1.dtd pkg.csize=6328 pkg.size=29897
+file 1ff8abe81a940fd48dbe942d529dc5f3100a975f chash=596dde55a582f58a78ea20765d4b859fa458aa04 group=sys mode=0644 owner=root path=glassfish/lib/dtds/sun-resources_1_2.dtd pkg.csize=6507 pkg.size=30239
+set name=publisher value=stable.glassfish.org

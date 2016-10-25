@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>@ManyToMany</title>
+    </h:head>
+    <h:body>
+        <h1>@ManyToMany</h1>
+        <h:form>           
+            <h:commandButton action="#{bean.persistAction()}" value="Insert A Set Of Players (before each press drop MongoDB database from shell)" style="width:600px;"/>            
+        </h:form>   
+        <h:form>           
+            <h:commandButton action="#{bean.findAction()}" value="List Players (first 1000)" style="width:600px;"/>            
+        </h:form>
+        <h:form>           
+            <h:commandButton action="#{bean.removeAction()}" value="Remove First Player (_id:1 - _id:1000)" style="width:600px;"/>            
+        </h:form>
+    </h:body>
+</html>
+

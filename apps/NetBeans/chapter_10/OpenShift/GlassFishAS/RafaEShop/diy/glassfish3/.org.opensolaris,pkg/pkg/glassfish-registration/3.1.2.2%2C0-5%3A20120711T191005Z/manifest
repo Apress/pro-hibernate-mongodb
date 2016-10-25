@@ -1,0 +1,12 @@
+set name=fmri value=pkg:/glassfish-registration@3.1.2.2,0-5:20120711T191005Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish registration module. GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Registration"
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 24a00bf5cf9c0213f6cda13c6613895283ae3e79 chash=5cd69ad71ee9f29cc1b9f82ecb78542a7bea3c4a group=sys mode=0644 owner=root path=glassfish/modules/glassfish-registration.jar pkg.csize=19253 pkg.size=21659
+file 32ce76d450942a81e09262b87097748cec0c2a9d chash=b71ed7672e9bf25cab08c2d5faf28b6227a8ebf2 group=sys mode=0644 owner=root path=glassfish/modules/registration-api.jar pkg.csize=8831 pkg.size=11823
+file caa3e95b464adc5573d9a4998cc0a2a09821290c chash=d2c6ddb584e14f33282b1cd7152c742c2e543d6c group=sys mode=0644 owner=root path=glassfish/modules/registration-impl.jar pkg.csize=69968 pkg.size=75817
+set name=publisher value=stable.glassfish.org

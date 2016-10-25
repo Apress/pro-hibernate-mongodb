@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"    
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>        
+        <title>Rafael Nadal E-Shop</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">
+            <p:layoutUnit position="center" resizable="false">
+                <h:panelGrid columns="1" width="100%" style="text-align: center;">
+                    <p:graphicImage value="resources/images/header.png" width="998"/>
+                    <p:panel style="border:none;">
+                        <h:panelGrid columns="2" width="100%" style="text-align: center;">
+                            <h:form>                     
+                                <p:commandButton actionListener="#{helperbean.populateShop()}" value="Populate Rafael Nadal E- Shop MongoDB Database"/>            
+                            </h:form>                                                                                                                        
+                            <p:ajaxStatus style="width:25px;height:25px;">
+                                <f:facet name="start">
+                                    <h:graphicImage value="./resources/images/ajax-loading.gif" />
+                                </f:facet>
+                                <f:facet name="complete">
+                                    <h:outputText value="" />
+                                </f:facet>
+                            </p:ajaxStatus>
+                        </h:panelGrid>       
+                    </p:panel>
+                    <p:panel>
+                        <h:outputText value="Pressing the above button will populate the MongoDB database, named 'eshop_db' with a default set of data. DO NOT press the button more than once! If you want to repeat the process then drop the 'eshop_db' database before!!!"/>
+                    </p:panel>   
+                    <h:form>
+                        <h:commandButton action="index?faces-redirect=true" value="Go To Website" />
+                    </h:form>
+                </h:panelGrid>                
+            </p:layoutUnit>
+        </p:layout>
+    </h:body>
+</html>

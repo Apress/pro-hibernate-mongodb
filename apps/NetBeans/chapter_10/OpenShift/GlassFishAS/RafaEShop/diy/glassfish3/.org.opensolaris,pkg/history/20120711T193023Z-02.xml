@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ascii"?>
+<history><client name="pkg" version="1.122.2-56.2852"><args><arg><![CDATA[/BUILD_AREA/tools/2.3-b56-toolkit/pkg-toolkit-sunos-i386/pkg/bin/client.py]]></arg><arg><![CDATA[install]]></arg><arg><![CDATA[jersey]]></arg></args></client><operation end_time="20120711T193024Z" name="install" result="Succeeded" start_time="20120711T193023Z" userid="0" username="root"><start_state><![CDATA[UNEVALUATED:
++pkg:/jersey@1.11.1,0-1.0:20120711T191710Z
+]]></start_state><end_state><![CDATA[None -> pkg:/jersey@1.11.1,0-1.0:20120711T191710Z
+]]></end_state></operation></history>

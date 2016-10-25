@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ascii"?>
+<history><client name="pkg" version="1.122.2-56.2852"><args><arg><![CDATA[/BUILD_AREA/tools/2.3-b56-toolkit/pkg-toolkit-sunos-i386/pkg/bin/client.py]]></arg><arg><![CDATA[install]]></arg><arg><![CDATA[shoal]]></arg></args></client><operation end_time="20120711T193021Z" name="install" result="Succeeded" start_time="20120711T193021Z" userid="0" username="root"><start_state><![CDATA[UNEVALUATED:
++pkg:/shoal@1.6.21,0-0:20120711T190911Z
+]]></start_state><end_state><![CDATA[None -> pkg:/shoal@1.6.21,0-0:20120711T190911Z
+]]></end_state></operation></history>

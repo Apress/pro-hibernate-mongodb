@@ -1,0 +1,2 @@
+dir group=sys mode=0755 owner=nobody path=javadb
+dir group=sys mode=0755 owner=nobody path=javadb/lib

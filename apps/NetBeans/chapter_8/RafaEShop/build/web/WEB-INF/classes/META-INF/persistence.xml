@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="HOGM_eSHOP-ejbPU" transaction-type="JTA">
+        <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+        <class>eshop.entities.Categories</class>
+        <class>eshop.entities.Customers</class>
+        <class>eshop.entities.Inventory</class>
+        <class>eshop.entities.Orders</class>
+        <class>eshop.entities.Products</class>       
+    <properties>
+        <property name="hibernate.search.default.directory_provider" value="filesystem"/>
+        <property name="hibernate.search.default.indexBase" value="D:/eshop"/>
+        <property name="hibernate.search.default.locking_strategy" value="single"/>
+        <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+        <property name="hibernate.ogm.datastore.provider" value="mongodb"/>
+        <property name="hibernate.ogm.datastore.grid_dialect" value="org.hibernate.ogm.dialect.mongodb.MongoDBDialect"/>
+        <property name="hibernate.ogm.mongodb.database" value="eshop_db"/>
+        <property name="hibernate.ogm.mongodb.host" value="127.0.0.1"/>
+        <property name="hibernate.ogm.mongodb.port" value="27017"/>
+    </properties>
+</persistence-unit>
+</persistence>

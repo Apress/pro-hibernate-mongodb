@@ -1,0 +1,8 @@
+dir path=glassfish/lib 
+dir path=glassfish/lib/schemas 
+dir path=glassfish/modules/endorsed 
+dir path=glassfish/modules/autostart 
+dir path=glassfish/lib/dtds 
+dir path=glassfish/lib/embedded 
+dir path=glassfish 
+dir path=glassfish/modules 

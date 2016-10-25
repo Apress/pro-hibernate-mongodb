@@ -1,0 +1,14 @@
+file b0dbd5dae4802dba0f9b69f5a5316f00cf927ba9 chash=76fdbae9f982776fec55a8ba8ea99c4dfbd5e3a5 group=sys mode=0644 owner=root path=glassfish/modules/jersey-json.jar pkg.csize=130531 pkg.size=145983
+file c4ca57498a7890027895aa473b45a57646aeb239 chash=258fa8dcc1be5a07d1b7641b9ac7e1e5394b0ded group=sys mode=0644 owner=root path=glassfish/modules/jersey-multipart.jar pkg.csize=43573 pkg.size=50604
+file 75b430695bb962f9f9f708382d154de56a46e9a8 chash=841b719014c5755e8e9fb645531d9999f3c7b751 group=sys mode=0644 owner=root path=glassfish/modules/jersey-grizzly.jar pkg.csize=13987 pkg.size=17446
+file 2f83d96dc44191230ef5f1ab4563ceab0683bac9 chash=84807252e66771d0980cfd9398659547f8205f1d group=sys mode=0644 owner=root path=glassfish/modules/jersey-client.jar pkg.csize=112359 pkg.size=126721
+file f9c7408802c85a6d32022bd994028492524b5e85 chash=4d4ee4ecfc1af717003de3d0b0c847b801b61ddf group=sys mode=0644 owner=root path=glassfish/modules/jersey-gf-server.jar pkg.csize=495624 pkg.size=578613
+file 08b897d138a4ab3769d52e673efaa5e419080bb6 chash=fba8dcc7558d7594079f7418b0f1d68b368be5ee group=sys mode=0644 owner=root path=glassfish/modules/jettison.jar pkg.csize=59548 pkg.size=66157
+file f7adb8c1f0864d8c690f0aeb0c176d666803da23 chash=c348b9baf1025e0532f897fb5ce12dbadc663cd8 group=sys mode=0644 owner=root path=glassfish/modules/jackson-jaxrs.jar pkg.csize=16262 pkg.size=17889
+file dab64466ae83e538cc8cbcff43a0d50fbf00531f chash=fbe4087d424c159a76d0a18ed631f13aed9489fe group=sys mode=0644 owner=root path=glassfish/modules/jersey-gf-statsproviders.jar pkg.csize=16750 pkg.size=21443
+file 16f0f09913551d86a47a05b81e0c6ccd6a3dddd8 chash=819b0914d634c787fec24cf737e3f16235a4e92b group=sys mode=0644 owner=root path=glassfish/modules/jackson-mapper-asl.jar pkg.csize=673192 pkg.size=746931
+file f1793336e52311262470608fb4f86688bd871d62 chash=7fef28292ac806133c509d5c14f26736446a719b group=sys mode=0644 owner=root path=glassfish/modules/jackson-xc.jar pkg.csize=24457 pkg.size=26384
+file 94a7510509b07c61d2042b3ff1ed7cf23cff88c2 chash=f9c485ca102b062dd658e026baffe097c35ef916 group=sys mode=0644 owner=root path=glassfish/modules/jackson-core-asl.jar pkg.csize=208127 pkg.size=223234
+file 37aebda8f4d2aad61e10f75af7540d05c5b255ff chash=dda7ae432788bf4059c895d8ed093efe20d77e76 group=sys mode=0644 owner=root path=glassfish/modules/jersey-moxy.jar pkg.csize=10917 pkg.size=13105
+file 7fa2e82118cac16b84a1c565b1b7ad0b8f50b01c chash=bb1b39e8bed484f7f64c211bacd826cb249d6d22 group=sys mode=0644 owner=root path=glassfish/modules/jersey-gf-servlet.jar pkg.csize=106603 pkg.size=121041
+file 3ea6163e48cd568bef599346e38b5e5e20dda112 chash=a674a3919c06b1e6266f009945340384c5df5ac2 group=sys mode=0644 owner=root path=glassfish/modules/jersey-core.jar pkg.csize=396090 pkg.size=449052

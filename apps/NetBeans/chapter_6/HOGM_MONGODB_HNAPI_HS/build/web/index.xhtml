@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Hibernate OGM, Hibernate Search, Hibernate Native API, Apache Lucene and MongoDB</title>
+    </h:head>
+    <h:body>
+        <h1>Hibernate OGM, Hibernate Search, Hibernate Native API, Apache Lucene and MongoDB</h1>
+        <h:form>           
+            <h:commandButton action="#{bean.persistAction()}" value="Insert Player"/>            
+        </h:form>
+        <table>
+            <tr>
+                <td bgcolor="cyan" align="center">
+                    <h4>All Players</h4>
+                </td>
+                <td bgcolor="gray" align="center">
+                    <h4>Select only matching Rafael Nadal documents</h4>
+                </td>
+                <td bgcolor="gray" align="center">
+                    <h4>Surnames J* Players</h4>
+                </td>
+                <td bgcolor="gray" align="center">
+                    <h4>Age between 25 and 28 excluding limits, Players</h4>
+                </td>
+                <td bgcolor="gray" align="center">
+                    <h4>Only Players born in 1987</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectAllAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="dd.MM.yyyy" />
+                                </h:outputText>                                   
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectRafaelNadalAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="dd.MM.yyyy" />
+                                </h:outputText>                 
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectJAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="dd.MM.yyyy" />
+                                </h:outputText>             
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.select25To28AgeAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="dd.MM.yyyy" />
+                                </h:outputText>           
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectByYearAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="yyyy" />
+                                </h:outputText>         
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>
+

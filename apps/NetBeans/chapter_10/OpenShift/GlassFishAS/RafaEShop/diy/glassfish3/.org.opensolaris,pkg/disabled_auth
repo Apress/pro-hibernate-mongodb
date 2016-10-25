@@ -1,0 +1,19 @@
+[authority_release.javaeesdk.oracle.com]
+origin = http://pkg.oracle.com/javaeesdk/6/release/
+ssl_key = None
+ssl_cert = None
+uuid = 2dd25e8c-cb8e-11e1-af77-000093d13ae0
+repo.related_uris = []
+mirrors = []
+repo.description = None
+repo.name = None
+repo.sort_policy = priority
+disabled = True
+alias = None
+prefix = release.javaeesdk.oracle.com
+repo.legal_uris = []
+repo.registered = False
+repo.registration_uri = None
+repo.collection_type = core
+repo.refresh_seconds = None
+

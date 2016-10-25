@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>CRUD OPERATIONS</title>
+    </h:head>
+    <h:body>
+        <h1>CRUD OPERATIONS</h1>        
+        <h4>Search Player (FIND operation)</h4>
+        <h:form id="viewPlayerFormId">
+            <h:panelGrid columns="3">
+                <h:outputLabel for="playerIds" value="Search By Id:"/>
+                <h:selectOneListbox id="playerIds" value="#{bean.find_id}">
+                    <f:selectItems value="#{bean.ids}" var="t"	itemLabel="#{t}" itemValue="#{t}" />
+                </h:selectOneListbox>
+                <h:commandButton action="#{bean.findAction()}" value="Search" style="width:100px;"/>  
+            </h:panelGrid>     
+        </h:form>            
+        Found player (or last persisted player): Name: #{bean.player.name}, Surname: #{bean.player.surname}, Age: #{bean.player.age}                 
+        <h4>New Player (PERSIST operation) / Update Player (MERGE operation) / Remove Player (REMOVE operation)</h4>
+        <h:form id="newPlayerFormId">      
+            <h:panelGrid columns="2">             
+                <h:outputLabel for="playerNameId" value="Player Name:"/>
+                <h:inputText id="playerNameId" value="#{bean.player.name}"/>
+                <h:outputLabel for="playerSurnameId" value="Player Surname:"/>
+                <h:inputText id="playerSurnameId" value="#{bean.player.surname}"/>
+                <h:outputLabel for="playerAgeId" value="Player Age:"/>
+                <h:inputText id="playerAgeId" value="#{bean.player.age}"/>
+                <h:outputLabel for="playerBirthId" value="Player Birth (yyyy.mm.dd):"/>
+                <h:inputText id="playerBirthId" value="#{bean.player.birth}">
+                    <f:convertDateTime pattern="yyyy.MM.dd" />
+                </h:inputText>
+            </h:panelGrid>
+            <h:commandButton action="#{bean.persistAction()}" value="New" style="width:150px;"/>  
+            <h:commandButton action="#{bean.updateAction()}" value="Update" style="width:150px;"/> 
+            <h:commandButton action="#{bean.removeAction()}" value="Remove" style="width:150px;"/>                                              
+        </h:form>        
+    </h:body>
+</html>
+
+

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>@Version</title>
+    </h:head>
+    <h:body>
+        <h1>@Version</h1>
+        <h:panelGrid columns="1">
+            <h:panelGrid columns="1">
+                <h2>Insert a new player (one player with _id:1 is enough)</h2>
+            </h:panelGrid>
+            <h:panelGrid columns="2">
+                Persist a new player: 
+                <h:form>                      
+                    <h:commandButton action="#{bean.persistAction()}" value="Insert Player" style="width:200px;"/>            
+                </h:form>           
+                Do several updates and monitor the value of "version"
+                <h:form>           
+                    <h:commandButton action="#{bean.readUpdateAction()}" value="Update Player" style="width:200px;"/>            
+                </h:form>
+            </h:panelGrid>
+            <h:panelGrid columns="1">
+                <h2> Testing optimistic locking (LockModeType.OPTIMISTIC and LockModeType.OPTIMISTIC_FORCE_INCREMENT) ...</h2>
+            </h:panelGrid>   
+            <h:panelGrid columns="2">
+                Read the first player (this is p1), _id:1
+                <h:form>           
+                    <h:commandButton action="#{bean.read_OPTIMISTIC_Action_1()}" value="Read 1 (p1)"  style="width:200px;"/> (step 1)            
+                </h:form>
+                Read the first player (this is p2), _id:1
+                <h:form>           
+                    <h:commandButton action="#{bean.read_OPTIMISTIC_Action_2()}" value="Read 2 (p2)"  style="width:200px;"/> (step 2)           
+                </h:form>
+                Update the first player (this is p1), _id:1
+                <h:form>           
+                    <h:commandButton action="#{bean.update_OPTIMISTIC_Action_1()}" value="Update 1 (p1)"  style="width:200px;"/> (step 3)            
+                </h:form>
+                Update the first player (this is p2), _id:1
+                <h:form>           
+                    <h:commandButton action="#{bean.update_OPTIMISTIC_Action_2()}" value="Update 2 (p2)"  style="width:200px;"/> (step 4)          
+                </h:form>
+            </h:panelGrid>            
+        </h:panelGrid>
+    </h:body>
+</html>
+

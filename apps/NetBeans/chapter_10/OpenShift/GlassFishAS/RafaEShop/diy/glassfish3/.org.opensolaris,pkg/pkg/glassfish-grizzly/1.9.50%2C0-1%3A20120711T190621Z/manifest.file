@@ -1,0 +1,6 @@
+file bade7575ea5d9ac7ec25dca64e37befbc2bb1bdf chash=6d70e5b8524c8d506550f6f047cb12f054b9ce46 group=sys mode=0644 owner=root path=glassfish/modules/grizzly-utils.jar pkg.csize=461959 pkg.size=500324
+file b84cb7701daf2da34a95bef29c33e0275b6bdef1 chash=84cf8c404fd34bf5283890f964549c41e0b21de1 group=sys mode=0644 owner=root path=glassfish/modules/grizzly-portunif.jar pkg.csize=16818 pkg.size=19162
+file 424277d56d823c26928db776d5eda60c877245f3 chash=869234d6737d8226b83f1adbeea809f14032fc66 group=sys mode=0644 owner=root path=glassfish/modules/grizzly-framework.jar pkg.csize=213819 pkg.size=238478
+file 29793d20db5ebc7a1a79c4e9e8a4ff64c74b5c7e chash=ef56467f44d0a51e0ffb62e2a282f8f035ed9f22 group=sys mode=0644 owner=root path=glassfish/modules/grizzly-lzma.jar pkg.csize=48667 pkg.size=54080
+file 2064c81a59609524422a85b5b14840fa6cf02c88 chash=a23b1c9b1668b4bb4be38a99f410b7524a34346a group=sys mode=0644 owner=root path=glassfish/modules/grizzly-http.jar pkg.csize=169922 pkg.size=184195
+file 9e6740daaa57a9482b0fe6f8a163ed0c3658e412 chash=f91caadd51dc7719723883d2c71e79922ae6aa3f group=sys mode=0644 owner=root path=glassfish/modules/grizzly-rcm.jar pkg.csize=8845 pkg.size=10058

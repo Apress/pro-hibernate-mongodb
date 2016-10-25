@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Image
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Image";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../com/sun/pkg/client/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?com/sun/pkg/client/Image.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Image.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.sun.pkg.client</FONT>
+<BR>
+Class Image</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.pkg.client.Image</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Image</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+An <code>Image</code> is a directory tree containing the laid-down contents
+ of a self-consistent graph of Packages.
+ <p>
+ An Image has a root path.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>trm</DD>
+</DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client">Image.FmriState</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An <code>FmriState</code> represents the current state of an Fmri within
+ the image.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An <code>ImagePlan</code> takes a list of requested packages, an Image (and its
+ policy restrictions), and returns the set of package operations needed
+ to transform the Image to the list of requested packages.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#IMG_ENTIRE">IMG_ENTIRE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#IMG_PARTIAL">IMG_PARTIAL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#IMG_USER">IMG_USER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#Image(java.io.File)">Image</A></B>(java.io.File&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open an Image object for an existing user image based on a File.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#Image(java.lang.String)">Image</A></B>(java.lang.String&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an Image object for an existing user image based on a String</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#completeInstall()">completeInstall</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.html" title="class in com.sun.pkg.client">Image</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#create(java.io.File, java.lang.String, java.net.URL)">create</A></B>(java.io.File&nbsp;path,
+       java.lang.String&nbsp;authName,
+       java.net.URL&nbsp;origin)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new user image at the specified path.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getAuthorityNames()">getAuthorityNames</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the authority names defined for this image.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client">Image.FmriState</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getInventory(java.lang.String[], boolean)">getInventory</A></B>(java.lang.String[]&nbsp;pkg_list,
+             boolean&nbsp;all_known)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the inventory of packages and their associated state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Manifest.html" title="class in com.sun.pkg.client">Manifest</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getManifest(com.sun.pkg.client.Fmri)">getManifest</A></B>(<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&nbsp;fmri)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the manifest for a package.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.HashMap&lt;java.lang.String,java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getMetaData()">getMetaData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getPreferredAuthorityName()">getPreferredAuthorityName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.io.File</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getRootDirectory()">getRootDirectory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain the root directory for this image.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getURLConnectTimeout()">getURLConnectTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getURLReadmTimeout()">getURLReadmTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getVersionInstalled(java.lang.String)">getVersionInstalled</A></B>(java.lang.String&nbsp;pkgName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given just the package name (e.g., "SUNWbash"), find the version currently installed
+ in this image, and returns its <A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client"><CODE>Fmri</CODE></A> with the version number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#getVersionsInstalled(java.util.Collection)">getVersionsInstalled</A></B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plural version of <A HREF="../../../../com/sun/pkg/client/Image.html#getVersionInstalled(java.lang.String)"><CODE>getVersionInstalled(String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#hideMetaDirectory()">hideMetaDirectory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Change the permissions on the Image meta data directory so that the 
+ directory will be hidden.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#installPackages(boolean, boolean, java.util.List)">installPackages</A></B>(boolean&nbsp;download,
+                boolean&nbsp;apply,
+                java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#installPackages(boolean, boolean, java.lang.String...)">installPackages</A></B>(boolean&nbsp;download,
+                boolean&nbsp;apply,
+                java.lang.String...&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#installPackages(com.sun.pkg.client.ImagePlanProgressTracker, boolean, boolean, java.lang.String...)">installPackages</A></B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker,
+                boolean&nbsp;download,
+                boolean&nbsp;apply,
+                java.lang.String...&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#installPackages(java.util.List)">installPackages</A></B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#installPackages(java.lang.String...)">installPackages</A></B>(java.lang.String...&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#isTherePendingInstall()">isTherePendingInstall</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeInstallPlan(java.util.Collection)">makeInstallPlan</A></B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an plan for installing packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeInstallPlan(java.util.Collection, java.lang.String)">makeInstallPlan</A></B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames,
+                java.lang.String&nbsp;operation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an plan for installing packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeInstallPlan(java.util.List)">makeInstallPlan</A></B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an plan for installing packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeInstallPlan(java.lang.String...)">makeInstallPlan</A></B>(java.lang.String...&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an plan for installing packages and any required dependencies.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeInstallPlan(java.lang.String[], java.lang.String)">makeInstallPlan</A></B>(java.lang.String[]&nbsp;pkgNames,
+                java.lang.String&nbsp;operation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#makeUninstallPlan(java.util.Collection)">makeUninstallPlan</A></B>(java.util.Collection&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a plan for removing packages.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#refreshCatalog(java.lang.String)">refreshCatalog</A></B>(java.lang.String&nbsp;authname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call refresh on the Catalog for the given authority.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#refreshCatalogs()">refreshCatalogs</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call refresh on all of the Catalogs for this image.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#saveConfig()">saveConfig</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save the configuration for the image.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setAuthority(java.lang.String, java.net.URL, java.lang.String)">setAuthority</A></B>(java.lang.String&nbsp;authname,
+             java.net.URL&nbsp;origin,
+             java.lang.String&nbsp;uuid)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set image authority attributes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setClientName(java.lang.String)">setClientName</A></B>(java.lang.String&nbsp;clientname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the client name to be used in connections to repositories.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setDefaultClientName(java.lang.String)">setDefaultClientName</A></B>(java.lang.String&nbsp;clientname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the default client name for all Image objects created in this VM.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setMetaData(java.util.HashMap)">setMetaData</A></B>(java.util.HashMap&lt;java.lang.String,java.lang.String&gt;&nbsp;attrs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If provided this metadata is included in any catalog requests via
+ the X-JPkg-MetaData property on the HTTP GET request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setProperty(java.lang.String, java.lang.String)">setProperty</A></B>(java.lang.String&nbsp;pname,
+            java.lang.String&nbsp;pvalue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set image property value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setProxy(java.net.Proxy)">setProxy</A></B>(java.net.Proxy&nbsp;p)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the proxy to be used by connenctions to repositories.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setURLConnectTimeout(int)">setURLConnectTimeout</A></B>(int&nbsp;timeout_ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setURLReadmTimeout(int)">setURLReadmTimeout</A></B>(int&nbsp;timeout_ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#setVariant(java.lang.String, java.lang.String)">setVariant</A></B>(java.lang.String&nbsp;name,
+           java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set image variant value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#uninstallPackages(java.util.List)">uninstallPackages</A></B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uninstall packages.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.html#uninstallPackages(java.lang.String...)">uninstallPackages</A></B>(java.lang.String...&nbsp;pkgNames)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uninstall packages.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="IMG_ENTIRE"><!-- --></A><H3>
+IMG_ENTIRE</H3>
+<PRE>
+public static final int <B>IMG_ENTIRE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../constant-values.html#com.sun.pkg.client.Image.IMG_ENTIRE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="IMG_PARTIAL"><!-- --></A><H3>
+IMG_PARTIAL</H3>
+<PRE>
+public static final int <B>IMG_PARTIAL</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../constant-values.html#com.sun.pkg.client.Image.IMG_PARTIAL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="IMG_USER"><!-- --></A><H3>
+IMG_USER</H3>
+<PRE>
+public static final int <B>IMG_USER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../constant-values.html#com.sun.pkg.client.Image.IMG_USER">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Image(java.lang.String)"><!-- --></A><H3>
+Image</H3>
+<PRE>
+public <B>Image</B>(java.lang.String&nbsp;path)
+      throws java.lang.Exception</PRE>
+<DL>
+<DD>Create an Image object for an existing user image based on a String
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>path</CODE> - The path for a file or directory within the image.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE></DL>
+</DL>
+<HR>
+
+<A NAME="Image(java.io.File)"><!-- --></A><H3>
+Image</H3>
+<PRE>
+public <B>Image</B>(java.io.File&nbsp;path)
+      throws java.lang.Exception</PRE>
+<DL>
+<DD>Open an Image object for an existing user image based on a File.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>path</CODE> - A File within the image.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE><DT><B>See Also:</B><DD><A HREF="../../../../com/sun/pkg/client/Image.html#create(java.io.File, java.lang.String, java.net.URL)"><CODE>create(File, String, URL)</CODE></A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="create(java.io.File, java.lang.String, java.net.URL)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../com/sun/pkg/client/Image.html" title="class in com.sun.pkg.client">Image</A> <B>create</B>(java.io.File&nbsp;path,
+                           java.lang.String&nbsp;authName,
+                           java.net.URL&nbsp;origin)
+                    throws java.lang.Exception</PRE>
+<DL>
+<DD>Creates a new user image at the specified path. The equivalent of "pkg image-create".
+ This method creates a set of metadata necessary for a directory to function
+ as an IPS image.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>path</CODE> - Directory that will become an image. If no such directory exists,
+      it'll be created.<DD><CODE>authName</CODE> - The name of the initial authority to be added.<DD><CODE>origin</CODE> - The URL of the initial authority.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRootDirectory()"><!-- --></A><H3>
+getRootDirectory</H3>
+<PRE>
+public java.io.File <B>getRootDirectory</B>()</PRE>
+<DL>
+<DD>Obtain the root directory for this image.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the root directory for this image</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hideMetaDirectory()"><!-- --></A><H3>
+hideMetaDirectory</H3>
+<PRE>
+public void <B>hideMetaDirectory</B>()
+                       throws java.io.IOException</PRE>
+<DL>
+<DD>Change the permissions on the Image meta data directory so that the 
+ directory will be hidden.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProxy(java.net.Proxy)"><!-- --></A><H3>
+setProxy</H3>
+<PRE>
+public void <B>setProxy</B>(java.net.Proxy&nbsp;p)</PRE>
+<DL>
+<DD>Set the proxy to be used by connenctions to repositories.
+ <p>
+ The proxy for an Image is initialized to be the return value from 
+ SystemInfo.getProxy.  This method can be used to set the proxy to some 
+ other value or to null if the desire is to use the system defaults.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>p</CODE> - - the proxy to use</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setClientName(java.lang.String)"><!-- --></A><H3>
+setClientName</H3>
+<PRE>
+public void <B>setClientName</B>(java.lang.String&nbsp;clientname)</PRE>
+<DL>
+<DD>Set the client name to be used in connections to repositories.
+ <p>
+ The client name is included in the User-Agent header following the image
+ type. The default value is "pkg-java" if setClientName is not called or
+ another value as set by the setDefaultClientName method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>clientname</CODE> - the name of the client that is using this image object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDefaultClientName(java.lang.String)"><!-- --></A><H3>
+setDefaultClientName</H3>
+<PRE>
+public static void <B>setDefaultClientName</B>(java.lang.String&nbsp;clientname)</PRE>
+<DL>
+<DD>Set the default client name for all Image objects created in this VM.
+ <p>
+ See the setClientName method for information on how the client name value
+ is used.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>clientname</CODE> - the default value to use for client name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="saveConfig()"><!-- --></A><H3>
+saveConfig</H3>
+<PRE>
+public void <B>saveConfig</B>()
+                throws java.io.IOException</PRE>
+<DL>
+<DD>Save the configuration for the image.
+ 
+ Adjust the origin in the cfgfile so that it matches that of the current
+ platform as determined by origin_for_* properties.  This method writes
+ a new version of the cfgfile.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPreferredAuthorityName()"><!-- --></A><H3>
+getPreferredAuthorityName</H3>
+<PRE>
+public java.lang.String <B>getPreferredAuthorityName</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAuthorityNames()"><!-- --></A><H3>
+getAuthorityNames</H3>
+<PRE>
+public java.lang.String[] <B>getAuthorityNames</B>()</PRE>
+<DL>
+<DD>Return the authority names defined for this image.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array of authority names</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAuthority(java.lang.String, java.net.URL, java.lang.String)"><!-- --></A><H3>
+setAuthority</H3>
+<PRE>
+public void <B>setAuthority</B>(java.lang.String&nbsp;authname,
+                         java.net.URL&nbsp;origin,
+                         java.lang.String&nbsp;uuid)
+                  throws java.io.IOException</PRE>
+<DL>
+<DD>Set image authority attributes.
+ 
+ If authname names an authority that currently doesn't exist, it is added
+ to the image. Otherwise, the parameters are used to modify an existing
+ authority.
+ <p>
+ When adding an authority, the origin URL is required while
+ uuid may be null.  If the uuid is passed as null, a new uuid will be
+ generated and assigned to the authority.
+ <p>
+ When modifying an existing authority, the origin and uuid parameters may
+ be passed as nulls. In this case:
+   <ul>
+   <li>The existing origin will not be modified.</li>
+   <li>If a uuid is already present, the existing uuid will not be modified.</li>
+   <li>If a uuid is not present, a new uuid will be generated and assigned
+     to the authority.</li>
+   </ul>
+ <p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>authname</CODE> - - the name of the authority to change<DD><CODE>origin</CODE> - - the origin URL for the authority<DD><CODE>uuid</CODE> - - the UUID for the authority
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - - if the authority is not currently in the
+ image and origin is null.
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProperty(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setProperty</H3>
+<PRE>
+public void <B>setProperty</B>(java.lang.String&nbsp;pname,
+                        java.lang.String&nbsp;pvalue)</PRE>
+<DL>
+<DD>Set image property value.
+
+ The saveConfig method must be called to make the property persist.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pname</CODE> - - the name of the property to set<DD><CODE>pvalue</CODE> - - the value of the property</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVariant(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setVariant</H3>
+<PRE>
+public void <B>setVariant</B>(java.lang.String&nbsp;name,
+                       java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Set image variant value.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - - the name of the variant to set<DD><CODE>value</CODE> - - the value of the variant</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="refreshCatalogs()"><!-- --></A><H3>
+refreshCatalogs</H3>
+<PRE>
+public void <B>refreshCatalogs</B>()
+                     throws java.io.IOException</PRE>
+<DL>
+<DD>Call refresh on all of the Catalogs for this image.
+ 
+ This also updates the internal cache used by the Image class to store 
+ catalog information.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="refreshCatalog(java.lang.String)"><!-- --></A><H3>
+refreshCatalog</H3>
+<PRE>
+public void <B>refreshCatalog</B>(java.lang.String&nbsp;authname)
+                    throws java.io.IOException</PRE>
+<DL>
+<DD>Call refresh on the Catalog for the given authority.
+ 
+ This also updates the internal cache used by the Image class to store 
+ catalog information.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInventory(java.lang.String[], boolean)"><!-- --></A><H3>
+getInventory</H3>
+<PRE>
+public java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client">Image.FmriState</A>&gt; <B>getInventory</B>(java.lang.String[]&nbsp;pkg_list,
+                                                    boolean&nbsp;all_known)</PRE>
+<DL>
+<DD>Get the inventory of packages and their associated state.
+ 
+ The inventory is returned in FmriState objects that consist of an Fmri and 
+ the four states for the Fmri.  These states are:
+ <ul>
+ <li><b>upgradable</b> A package with a newer version if available in the 
+ catalog
+ <li><b>frozen</b> TBD
+ <li><b>incorporated</b> The package is part of an incorporation
+ <li><b>excludes</b> TBD
+ </ul>     *
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkg_list</CODE> - Limit the inventory to packages that match entries in the
+ list of package names<DD><CODE>all_known</CODE> - If true, return all package versions.  Otherwise only 
+ return the most recent version of each package.
+<DT><B>Returns:</B><DD>A List of FmriState objects that identify the Fmris that are 
+ available for the image.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeInstallPlan(java.util.Collection)"><!-- --></A><H3>
+makeInstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeInstallPlan</B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames)
+                                throws java.io.IOException,
+                                       com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Create an plan for installing packages and any required dependencies.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to install
+<DT><B>Returns:</B><DD>An ImagePlan that will install the packages when executed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeInstallPlan(java.util.Collection, java.lang.String)"><!-- --></A><H3>
+makeInstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeInstallPlan</B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames,
+                                       java.lang.String&nbsp;operation)
+                                throws java.io.IOException,
+                                       com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Create an plan for installing packages and any required dependencies.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to install<DD><CODE>operation</CODE> - identify the operation (install, list, uninstall)
+<DT><B>Returns:</B><DD>An ImagePlan that will install the packages when executed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeInstallPlan(java.lang.String...)"><!-- --></A><H3>
+makeInstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeInstallPlan</B>(java.lang.String...&nbsp;pkgNames)
+                                throws java.io.IOException,
+                                       com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Create an plan for installing packages and any required dependencies.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to install
+<DT><B>Returns:</B><DD>An ImagePlan that will install the packages when executed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeInstallPlan(java.lang.String[], java.lang.String)"><!-- --></A><H3>
+makeInstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeInstallPlan</B>(java.lang.String[]&nbsp;pkgNames,
+                                       java.lang.String&nbsp;operation)
+                                throws java.io.IOException,
+                                       com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeInstallPlan(java.util.List)"><!-- --></A><H3>
+makeInstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeInstallPlan</B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)
+                                throws java.io.IOException,
+                                       com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Create an plan for installing packages and any required dependencies.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgs</CODE> - List of valid Fmris from the image inventory for packages to 
+ install.
+<DT><B>Returns:</B><DD>An ImagePlan that will install the packages when executed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="makeUninstallPlan(java.util.Collection)"><!-- --></A><H3>
+makeUninstallPlan</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html" title="class in com.sun.pkg.client">Image.ImagePlan</A> <B>makeUninstallPlan</B>(java.util.Collection&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)
+                                  throws java.io.IOException</PRE>
+<DL>
+<DD>Create a plan for removing packages.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgs</CODE> - <A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client"><CODE>Fmri</CODE></A>s to be removed.
+<DT><B>Returns:</B><DD>An ImagePlan that will uninstall the packages when executed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isTherePendingInstall()"><!-- --></A><H3>
+isTherePendingInstall</H3>
+<PRE>
+public boolean <B>isTherePendingInstall</B>()
+                              throws java.io.IOException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="completeInstall()"><!-- --></A><H3>
+completeInstall</H3>
+<PRE>
+public void <B>completeInstall</B>()
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="installPackages(java.lang.String...)"><!-- --></A><H3>
+installPackages</H3>
+<PRE>
+public void <B>installPackages</B>(java.lang.String...&nbsp;pkgNames)
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Install packages and any required dependencies.
+ <p>
+ The catalogs are searched for a matching package for each entry in the 
+ pkgNames array. 
+ If multiple packages match an entry, the most recent package is installed.
+ If no matching package is found, an IllegalArgumentException is thrown.
+ <p>
+ This method is shorthand for:
+ <pre>
+      makeInstallPlan(pkgNames).execute();
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to install
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if a matching package cannot be found
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="installPackages(com.sun.pkg.client.ImagePlanProgressTracker, boolean, boolean, java.lang.String...)"><!-- --></A><H3>
+installPackages</H3>
+<PRE>
+public void <B>installPackages</B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker,
+                            boolean&nbsp;download,
+                            boolean&nbsp;apply,
+                            java.lang.String...&nbsp;pkgNames)
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Install packages and any required dependencies.
+ <p>
+ The catalogs are searched for a matching package for each entry in the
+ pkgNames array.
+ If multiple packages match an entry, the most recent package is installed.
+ If no matching package is found, an IllegalArgumentException is thrown.
+ <p>
+ This method is shorthand for:
+ <pre>
+      makeInstallPlan(pkgNames).execute();
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to install<DD><CODE>download</CODE> - boolean variable to trigger download<DD><CODE>apply</CODE> - boolean variable to trigger installtion for downloaded packages<DD><CODE>tracker</CODE> - Progress tracker. May be null.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if a matching package cannot be found
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="installPackages(boolean, boolean, java.lang.String...)"><!-- --></A><H3>
+installPackages</H3>
+<PRE>
+public void <B>installPackages</B>(boolean&nbsp;download,
+                            boolean&nbsp;apply,
+                            java.lang.String...&nbsp;pkgNames)
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="installPackages(java.util.List)"><!-- --></A><H3>
+installPackages</H3>
+<PRE>
+public void <B>installPackages</B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Install packages and any required dependencies.
+ <p>
+ This method is shorthand for:
+ <pre>
+      makeInstallPlan(pkgs).execute();
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgs</CODE> - List of valid Fmris from the image inventory for packages to 
+ install.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="installPackages(boolean, boolean, java.util.List)"><!-- --></A><H3>
+installPackages</H3>
+<PRE>
+public void <B>installPackages</B>(boolean&nbsp;download,
+                            boolean&nbsp;apply,
+                            java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)
+                     throws java.io.IOException,
+                            com.sun.pkg.client.Constraint.ConstraintException</PRE>
+<DL>
+<DD>Install packages and any required dependencies.
+ <p>
+ This method is shorthand for:
+ <pre>
+      makeInstallPlan(pkgs).execute();
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgs</CODE> - List of valid Fmris from the image inventory for packages to
+ install.<DD><CODE>download</CODE> - boolean variable to trigger download<DD><CODE>apply</CODE> - boolean variable to trigger installtion for downloaded packages
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE>com.sun.pkg.client.Constraint.ConstraintException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="uninstallPackages(java.lang.String...)"><!-- --></A><H3>
+uninstallPackages</H3>
+<PRE>
+public void <B>uninstallPackages</B>(java.lang.String...&nbsp;pkgNames)
+                       throws java.io.IOException</PRE>
+<DL>
+<DD>Uninstall packages.
+ 
+ The installed package list is searched for a matching package for 
+ each entry in the pkgNames array. 
+ 
+ If no matching package is found, the entry is ignored.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgNames</CODE> - names of packages to uninstall
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="uninstallPackages(java.util.List)"><!-- --></A><H3>
+uninstallPackages</H3>
+<PRE>
+public void <B>uninstallPackages</B>(java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt;&nbsp;pkgs)
+                       throws java.io.IOException</PRE>
+<DL>
+<DD>Uninstall packages.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pkgs</CODE> - List of valid Fmris to uninstall.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getManifest(com.sun.pkg.client.Fmri)"><!-- --></A><H3>
+getManifest</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Manifest.html" title="class in com.sun.pkg.client">Manifest</A> <B>getManifest</B>(<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&nbsp;fmri)
+                     throws java.io.IOException</PRE>
+<DL>
+<DD>Get the manifest for a package.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a Manifest
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVersionInstalled(java.lang.String)"><!-- --></A><H3>
+getVersionInstalled</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A> <B>getVersionInstalled</B>(java.lang.String&nbsp;pkgName)
+                         throws java.io.IOException</PRE>
+<DL>
+<DD>Given just the package name (e.g., "SUNWbash"), find the version currently installed
+ in this image, and returns its <A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client"><CODE>Fmri</CODE></A> with the version number.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>null if the package isn't installed.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVersionsInstalled(java.util.Collection)"><!-- --></A><H3>
+getVersionsInstalled</H3>
+<PRE>
+public java.util.List&lt;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>&gt; <B>getVersionsInstalled</B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;pkgNames)
+                                          throws java.io.IOException</PRE>
+<DL>
+<DD>Plural version of <A HREF="../../../../com/sun/pkg/client/Image.html#getVersionInstalled(java.lang.String)"><CODE>getVersionInstalled(String)</CODE></A>.
+
+ <p>
+ If a package specified isn't installed, it'll be just ignored.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>can be empty but never null. Never contains null.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setURLConnectTimeout(int)"><!-- --></A><H3>
+setURLConnectTimeout</H3>
+<PRE>
+public void <B>setURLConnectTimeout</B>(int&nbsp;timeout_ms)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getURLConnectTimeout()"><!-- --></A><H3>
+getURLConnectTimeout</H3>
+<PRE>
+public int <B>getURLConnectTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setURLReadmTimeout(int)"><!-- --></A><H3>
+setURLReadmTimeout</H3>
+<PRE>
+public void <B>setURLReadmTimeout</B>(int&nbsp;timeout_ms)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getURLReadmTimeout()"><!-- --></A><H3>
+getURLReadmTimeout</H3>
+<PRE>
+public int <B>getURLReadmTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMetaData(java.util.HashMap)"><!-- --></A><H3>
+setMetaData</H3>
+<PRE>
+public void <B>setMetaData</B>(java.util.HashMap&lt;java.lang.String,java.lang.String&gt;&nbsp;attrs)</PRE>
+<DL>
+<DD>If provided this metadata is included in any catalog requests via
+ the X-JPkg-MetaData property on the HTTP GET request.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMetaData()"><!-- --></A><H3>
+getMetaData</H3>
+<PRE>
+public java.util.HashMap&lt;java.lang.String,java.lang.String&gt; <B>getMetaData</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../com/sun/pkg/client/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?com/sun/pkg/client/Image.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Image.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

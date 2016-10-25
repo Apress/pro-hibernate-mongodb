@@ -1,0 +1,3 @@
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish connector and connection pooling module provides runtime infrastructure to use resource-adapters in GlassFish. For more information on Java EE Connector Architecture (JCA), please refer to http://java.sun.com/j2ee/connector/.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish JCA"

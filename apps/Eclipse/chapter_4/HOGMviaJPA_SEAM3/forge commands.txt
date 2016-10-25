@@ -1,0 +1,168 @@
+    _____                    
+   |  ___|__  _ __ __ _  ___ 
+   | |_ / _ \| `__/ _` |/ _ \  \\
+   |  _| (_) | | | (_| |  __/  //
+   |_|  \___/|_|  \__, |\___| 
+                   |___/      
+
+JBoss Forge, version [ 1.0.5.Final ] - JBoss, by Red Hat, Inc. [ http://jboss.org/forge ]
+[Maven_HOGM] Eclipse $ new-project --named HOGMviaJPA_SEAM3
+ ? Use [D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3] as project directory? [Y/n] y
+***SUCCESS*** Created project [HOGMviaJPA_SEAM3] in new working directory [D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3]
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/pom.xml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/test/java
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/resources
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/test/resources
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java/com/example/HOGMviaJPA_SEAM3
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/resources/META-INF/forge.xml
+[HOGMviaJPA_SEAM3] HOGMviaJPA_SEAM3 $ scaffold setup
+ ? No scaffold type was selected, use default [JavaServer Faces]? [Y/n] y
+ ? Scaffold provider [faces] is not installed. Install it? [Y/n] y
+ ? Facet [forge.maven.WebResourceFacet] requires packaging type(s) [war], but is currently [jar]. Update packaging? (Note: this could deactivate other plugins in your project.) [Y/n] y
+***SUCCESS*** Installed [forge.maven.WebResourceFacet] successfully.
+Use which version of 'jboss-javaee-6.0' ?
+
+  1 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.Beta4]*
+  2 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.Beta5]*
+  3 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.Beta6]*
+  4 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.Beta7]*
+  5 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.CR1]*
+  6 - [org.jboss.spec:jboss-javaee-6.0:pom::1.0.0.Final]*
+  7 - [org.jboss.spec:jboss-javaee-6.0:pom::2.0.0.Beta1]*
+  8 - [org.jboss.spec:jboss-javaee-6.0:pom::2.0.0.CR1]*
+  9 - [org.jboss.spec:jboss-javaee-6.0:pom::2.0.0.Final]*
+  10 - [org.jboss.spec:jboss-javaee-6.0:pom::2.1.0.Beta1]*
+  11 - [org.jboss.spec:jboss-javaee-6.0:pom::3.0.0-SNAPSHOT]*
+  12 - [org.jboss.spec:jboss-javaee-6.0:pom::3.0.0.Beta1]*
+  13 - [org.jboss.spec:jboss-javaee-6.0:pom::3.0.0.Final]*
+  14 - [org.jboss.spec:jboss-javaee-6.0:pom::3.0.1.Final]*
+
+ ? Choose an option by typing the number of the selection [*-default]  [0] 14
+***SUCCESS*** Installed [forge.spec.jpa] successfully.
+***SUCCESS*** Installed [forge.spec.ejb] successfully.
+***SUCCESS*** Installed [forge.spec.cdi] successfully.
+***SUCCESS*** Installed [forge.spec.servlet] successfully.
+1
+***SUCCESS*** Installed [forge.spec.jsf.api] successfully.
+***SUCCESS*** Installed [faces] successfully.
+ ? Create scaffold in which sub-directory of web-root? (e.g. http://localhost:8080/HOGMviaJPA_SEAM3/DIR) [/] main
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/pom.xml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/resources/META-INF/persistence.xml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/WEB-INF/beans.xml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/WEB-INF/faces-config.xml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/favicon.ico
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/scaffold/paginator.xhtml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/scaffold/pageTemplate.xhtml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/main/index.html
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/main/index.xhtml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/error.xhtml
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/add.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/background.gif
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/false.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/favicon.ico
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/forge-logo.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/forge-style.css
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/jboss-community.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/remove.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/search.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/resources/true.png
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/WEB-INF/web.xml
+[HOGMviaJPA_SEAM3] HOGMviaJPA_SEAM3 $ seam-persistence setup
+Which version of Seam Persistence do you want to install?
+
+  1 - [org.jboss.seam.persistence:seam-persistence:::3.0.0-SNAPSHOT]*
+  2 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.Beta2]*
+  3 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.Beta3]*
+  4 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.Beta4]*
+  5 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.CR1]*
+  6 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.CR2]*
+  7 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.CR3]*
+  8 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.CR4]*
+  9 - [org.jboss.seam.persistence:seam-persistence:::3.0.0.Final]*
+  10 - [org.jboss.seam.persistence:seam-persistence:::3.0.1-SNAPSHOT]*
+  11 - [org.jboss.seam.persistence:seam-persistence:::3.1.0-SNAPSHOT]*
+  12 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Beta1]*
+  13 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Beta2]*
+  14 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Beta3]*
+  15 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Beta4]*
+  16 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Beta5]*
+  17 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.CR1]*
+  18 - [org.jboss.seam.persistence:seam-persistence:::3.1.0.Final]*
+  19 - [org.jboss.seam.persistence:seam-persistence:::3.2.0-SNAPSHOT]*
+
+ ? Choose an option by typing the number of the selection [*-default]  [0] 18
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/pom.xml
+[HOGMviaJPA_SEAM3] HOGMviaJPA_SEAM3 $ seam-persistence install-managed-persistence-context
+ ? What package do you want to use for the Persistence Context Procucer class? [com.example.HOGMviaJPA_SEAM3] 
+ ? How do you want to name the Persistence Context Procucer class? [ManagedPersistenceContextFactory] 
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java/com/example/HOGMviaJPA_SEAM3/ManagedPersistenceContextFactory.java
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java/com/example/HOGMviaJPA_SEAM3/Forge.java
+[HOGMviaJPA_SEAM3] HOGMviaJPA_SEAM3 $ seam-persistence enable-declarative-tx
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/webapp/WEB-INF/beans.xml
+[HOGMviaJPA_SEAM3] HOGMviaJPA_SEAM3 $ entity --named LuckyNumberEntity
+ ? In which package you'd like to create this @Entity, or enter for default [com.example.HOGMviaJPA_SEAM3.model] 
+Created @Entity [com.example.HOGMviaJPA_SEAM3.model.LuckyNumberEntity]
+Picked up type <JavaResource>: com.example.HOGMviaJPA_SEAM3.model.LuckyNumberEntity
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java/com/example/HOGMviaJPA_SEAM3/model/LuckyNumberEntity.java
+[HOGMviaJPA_SEAM3] LuckyNumberEntity.java $ field int --named luckynumber
+Added field to com.example.HOGMviaJPA_SEAM3.model.LuckyNumberEntity: @Column private int luckynumber;
+
+Wrote D:\/Apress/apps/Eclipse/HOGMviaJPA_SEAM3/src/main/java/com/example/HOGMviaJPA_SEAM3/model/LuckyNumberEntity.java
+[HOGMviaJPA_SEAM3] LuckyNumberEntity.java $ build
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building HOGMviaJPA_SEAM3 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ HOGMviaJPA_SEAM3 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ HOGMviaJPA_SEAM3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ HOGMviaJPA_SEAM3 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ HOGMviaJPA_SEAM3 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.7.2:test (default-test) @ HOGMviaJPA_SEAM3 ---
+[INFO] Surefire report directory: D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+There are no tests to run.
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ HOGMviaJPA_SEAM3 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [HOGMviaJPA_SEAM3] in [D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\target\HOGMviaJPA_SEAM3]
+[INFO] Processing war project
+[INFO] Copying webapp resources [D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\src\main\webapp]
+[INFO] Webapp assembled in [202 msecs]
+[INFO] Building war: D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\target\HOGMviaJPA_SEAM3.war
+[WARNING] Warning: selected war files include a WEB-INF/web.xml which will be ignored 
+(webxml attribute is missing from war task, or ignoreWebxml attribute is specified as 'true')
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ HOGMviaJPA_SEAM3 ---
+[INFO] Installing D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\target\HOGMviaJPA_SEAM3.war to C:\Users\Anghel Leonard\.m2\repository\com\example\HOGMviaJPA_SEAM3\HOGMviaJPA_SEAM3\1.0.0-SNAPSHOT\HOGMviaJPA_SEAM3-1.0.0-SNAPSHOT.war
+[INFO] Installing D:\Apress\apps\Eclipse\HOGMviaJPA_SEAM3\pom.xml to C:\Users\Anghel Leonard\.m2\repository\com\example\HOGMviaJPA_SEAM3\HOGMviaJPA_SEAM3\1.0.0-SNAPSHOT\HOGMviaJPA_SEAM3-1.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.709s
+[INFO] Finished at: Tue Jan 15 08:52:30 WET 2013
+[INFO] Final Memory: 42M/450M
+[INFO] ------------------------------------------------------------------------
+[HOGMviaJPA_SEAM3] LuckyNumberEntity.java $ 

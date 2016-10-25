@@ -1,0 +1,1 @@
+depend fmri=pkg:/mq-server@4.5.2 type=require

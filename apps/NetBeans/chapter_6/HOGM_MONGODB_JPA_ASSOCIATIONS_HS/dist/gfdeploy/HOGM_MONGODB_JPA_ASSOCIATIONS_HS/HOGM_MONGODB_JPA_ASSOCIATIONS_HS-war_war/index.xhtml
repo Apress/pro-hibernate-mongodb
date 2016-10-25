@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Associations, Hibernate OGM, Hibernate Search, JPA, Apache Lucene and MongoDB</title>
+    </h:head>
+    <h:body>
+        <h1>Associations, Hibernate OGM, Hibernate Search, JPA, Apache Lucene and MongoDB</h1>
+        <h:form>           
+            <h:commandButton action="#{bean.persistAction()}" value="Insert A Set Of Players (before each press drop MongoDB database from shell)" style="width:600px;"/>            
+        </h:form>    
+        <table>
+            <tr>
+                <td bgcolor="cyan" align="center">
+                    <h4>Players -> Tournaments</h4>
+                </td>
+                <td bgcolor="cyan" align="center">
+                    <h4>Tournaments -> Players</h4>
+                </td>                
+            </tr>
+            <tr>
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectAllPlayersAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Player Name</f:facet>
+                                #{t.name}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Surname</f:facet>
+                                #{t.surname}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Age</f:facet>
+                                #{t.age}                    
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Player Birth</f:facet>
+                                <h:outputText value="#{t.birth}" >
+                                    <f:convertDateTime pattern="dd.MM.yyyy" />
+                                </h:outputText>                                   
+                            </h:column>
+                            <h:column>
+                                 <f:facet name="header">Tournament Name</f:facet>
+                                 <h:dataTable value="#{t.tournaments}" var="q">                                    
+                                    <h:column>                               
+                                        #{q.tournament}
+                                    </h:column>
+                                </h:dataTable>
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+                <td style="vertical-align:top;">
+                    <h:form>           
+                        <h:dataTable value="#{bean.selectAllTournamentsAction()}" var="t" border="1">
+                            <h:column>
+                                <f:facet name="header">Tournament Name</f:facet>
+                                #{t.tournament}                    
+                            </h:column>                            
+                            <h:column>
+                                <f:facet name="header">Player</f:facet>
+                                <h:dataTable value="#{t.players}" var="q" border="1" width="100%">                                       
+                                    <h:column>                                        
+                                        #{q.name}                
+                                    </h:column>
+                                    <h:column>                                        
+                                        #{q.surname}                    
+                                    </h:column>
+                                    <h:column>                                        
+                                        #{q.age}                    
+                                    </h:column>
+                                    <h:column>                                        
+                                        <h:outputText value="#{q.birth}" >
+                                            <f:convertDateTime pattern="dd.MM.yyyy" />
+                                        </h:outputText>                                   
+                                    </h:column>
+                                </h:dataTable>
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>
+

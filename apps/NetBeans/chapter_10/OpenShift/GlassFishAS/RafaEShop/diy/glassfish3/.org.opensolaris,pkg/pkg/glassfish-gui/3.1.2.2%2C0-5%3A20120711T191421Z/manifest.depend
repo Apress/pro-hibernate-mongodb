@@ -1,0 +1,6 @@
+depend fmri=pkg:/glassfish-registration type=require
+depend fmri=pkg:/glassfish-jmx type=require
+depend fmri=pkg:/glassfish-jsf type=require
+depend fmri=pkg:/glassfish-osgi type=require
+depend fmri=pkg:/glassfish-management type=require
+depend fmri=pkg:/glassfish-web type=require

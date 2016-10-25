@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven.hibernate.ogm</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+        <dependency>
+            <groupId>org.hibernate.ogm</groupId>
+            <artifactId>hibernate-ogm-core</artifactId>
+            <version>4.0.0.Beta2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.ogm</groupId>
+            <artifactId>hibernate-ogm-mongodb</artifactId>
+            <version>4.0.0.Beta1</version>
+        </dependency>
+    </dependencies>
+    <build>
+       <directory>D:/Hibernate_OGM</directory> 
+       <defaultGoal>dependency:copy-dependencies</defaultGoal>
+    </build>  
+    <artifactId>Maven_HOGM</artifactId>
+</project>

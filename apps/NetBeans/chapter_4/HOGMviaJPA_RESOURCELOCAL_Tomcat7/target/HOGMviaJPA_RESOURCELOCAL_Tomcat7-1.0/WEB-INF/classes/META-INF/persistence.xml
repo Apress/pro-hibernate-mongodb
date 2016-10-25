@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="HOGM_JPA_RESOURCE_LOCAL_PU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
+        <class>hogm.hnapi.entities.LuckyNumberEntity</class>
+        <properties>            
+            <property name="hibernate.ogm.datastore.provider" value="mongodb"/>
+            <property name="hibernate.ogm.datastore.grid_dialect" value="org.hibernate.ogm.dialect.mongodb.MongoDBDialect"/>
+            <property name="hibernate.ogm.mongodb.database" value="tomcat_db"/>
+            <property name="hibernate.ogm.mongodb.host" value="127.0.0.1"/>
+            <property name="hibernate.ogm.mongodb.port" value="27017"/>
+        </properties>
+    </persistence-unit>
+</persistence>

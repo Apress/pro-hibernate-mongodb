@@ -1,0 +1,39 @@
+<ehcache updateCheck="false">
+<diskStore path="c:/_cached"/>
+<cache
+    name="hogm.mongodb.entity.Players"
+    maxElementsInMemory="10000"
+    eternal="false"
+    timeToLiveSeconds="120"
+    overflowToDisk="true"/>
+<cache
+    name="org.hibernate.cache.internal.StandardQueryCache"
+    maxElementsInMemory="10000"
+    eternal="false"
+    timeToLiveSeconds="120"
+    overflowToDisk="true"/>
+<cache
+    name="org.hibernate.cache.spi.UpdateTimestampsCache"
+    maxElementsInMemory="10000"
+    eternal="true"
+    overflowToDisk="true"/>
+<cache
+    name="Location"
+    maxElementsInMemory="10000"
+    eternal="false"
+    timeToIdleSeconds="120"
+    timeToLiveSeconds="120"
+    overflowToDisk="true"
+    diskPersistent="false"
+    diskExpiryThreadIntervalSeconds="120"
+    memoryStoreEvictionPolicy="LRU"/>
+<defaultCache 
+    maxElementsInMemory="10000"
+    eternal="false"
+    timeToIdleSeconds="120"
+    timeToLiveSeconds="120"
+    overflowToDisk="true"
+    diskPersistent="false"
+    diskExpiryThreadIntervalSeconds="120"
+    memoryStoreEvictionPolicy="LRU"/>
+</ehcache>

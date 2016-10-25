@@ -1,0 +1,424 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Image.ImagePlan
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Image.ImagePlan";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../com/sun/pkg/client/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?com/sun/pkg/client/Image.ImagePlan.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Image.ImagePlan.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.sun.pkg.client</FONT>
+<BR>
+Class Image.ImagePlan</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.pkg.client.Image.ImagePlan</B>
+</PRE>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../com/sun/pkg/client/Image.html" title="class in com.sun.pkg.client">Image</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Image.ImagePlan</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+An <code>ImagePlan</code> takes a list of requested packages, an Image (and its
+ policy restrictions), and returns the set of package operations needed
+ to transform the Image to the list of requested packages.
+ <p>
+ Use of an ImagePlan involves the identification of the Image, the
+ Catalogs (implicitly), and a set of complete or partial package FMRIs.
+ The Image's policy, which is derived from its type and configuration
+ will cause the formulation of the plan or an exception state.
+ <p>
+ XXX In the current formulation, an ImagePlan can handle [null ->
+ PkgFmri] and [PkgFmri@Version1 -> PkgFmri@Version2], for a set of
+ PkgFmri objects.  With a correct Action object definition, deletion
+ should be able to be represented as [PkgFmri@V1 -> null].
+ <p>
+ XXX Should we allow downgrades?  There's an "arrow of time" associated
+ with the smf(5) configuration method, so it's better to direct
+ manipulators to snapshot-based rollback, but if people are going to do
+ "pkg delete fmri; pkg install fmri@v(n - 1)", then we'd better have a
+ plan to identify when this operation is safe or unsafe.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#computeTransferFiles()">computeTransferFiles</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the total number of files that will be downloaded during <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute()"><CODE>execute()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#computeTransferSize()">computeTransferSize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computes the total number of bytes that will be downloaded during <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute()"><CODE>execute()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute()">execute</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Executes the plan with the empty callback.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute(boolean, boolean)">execute</A></B>(boolean&nbsp;download,
+        boolean&nbsp;apply)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Executes the plan with the empty callback.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute(com.sun.pkg.client.ImagePlanProgressTracker)">execute</A></B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Execute the actions required to bring about the plan.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute(com.sun.pkg.client.ImagePlanProgressTracker, boolean, boolean)">execute</A></B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker,
+        boolean&nbsp;download,
+        boolean&nbsp;apply)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Execute the actions required to bring about the plan.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#getProposedFmris()">getProposedFmris</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the Fmris that are proposed for installation as part of 
+ this plan.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generate a string representation for the ImagePlan.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>equals, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD>Generate a string representation for the ImagePlan.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>toString</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a String representing the ImagePlan</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProposedFmris()"><!-- --></A><H3>
+getProposedFmris</H3>
+<PRE>
+public <A HREF="../../../../com/sun/pkg/client/Fmri.html" title="class in com.sun.pkg.client">Fmri</A>[] <B>getProposedFmris</B>()</PRE>
+<DL>
+<DD>Return the Fmris that are proposed for installation as part of 
+ this plan.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the list of proposed Fmris</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeTransferSize()"><!-- --></A><H3>
+computeTransferSize</H3>
+<PRE>
+public long <B>computeTransferSize</B>()</PRE>
+<DL>
+<DD>Computes the total number of bytes that will be downloaded during <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute()"><CODE>execute()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="computeTransferFiles()"><!-- --></A><H3>
+computeTransferFiles</H3>
+<PRE>
+public int <B>computeTransferFiles</B>()</PRE>
+<DL>
+<DD>Computes the total number of files that will be downloaded during <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute()"><CODE>execute()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="execute()"><!-- --></A><H3>
+execute</H3>
+<PRE>
+public void <B>execute</B>()
+             throws java.io.IOException</PRE>
+<DL>
+<DD>Executes the plan with the empty callback.
+
+ <p>
+ See <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute(com.sun.pkg.client.ImagePlanProgressTracker)"><CODE>execute(ImagePlanProgressTracker)</CODE></A> for the exact semantics of the method.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="execute(boolean, boolean)"><!-- --></A><H3>
+execute</H3>
+<PRE>
+public void <B>execute</B>(boolean&nbsp;download,
+                    boolean&nbsp;apply)
+             throws java.io.IOException</PRE>
+<DL>
+<DD>Executes the plan with the empty callback.
+
+ <p>
+ See <A HREF="../../../../com/sun/pkg/client/Image.ImagePlan.html#execute(com.sun.pkg.client.ImagePlanProgressTracker)"><CODE>execute(ImagePlanProgressTracker)</CODE></A> for the exact semantics of the method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>download</CODE> - boolean variable to trigger download<DD><CODE>apply</CODE> - boolean variable to trigger installtion for downloaded packages
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="execute(com.sun.pkg.client.ImagePlanProgressTracker)"><!-- --></A><H3>
+execute</H3>
+<PRE>
+public void <B>execute</B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker)
+             throws java.io.IOException</PRE>
+<DL>
+<DD>Execute the actions required to bring about the plan.
+ <p>
+ This results in the installation or uninstallation as specified by
+ the plan.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>tracker</CODE> - The object that receives the progress of the execution. Must not be null.
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="execute(com.sun.pkg.client.ImagePlanProgressTracker, boolean, boolean)"><!-- --></A><H3>
+execute</H3>
+<PRE>
+public void <B>execute</B>(<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client">ImagePlanProgressTracker</A>&nbsp;tracker,
+                    boolean&nbsp;download,
+                    boolean&nbsp;apply)
+             throws java.io.IOException</PRE>
+<DL>
+<DD>Execute the actions required to bring about the plan.
+ <p>
+ This results in the installation or uninstallation as specified by
+ the plan.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>tracker</CODE> - The object that receives the progress of the execution. Must not be null.<DD><CODE>download</CODE> - boolean variable to trigger download<DD><CODE>apply</CODE> - boolean variable to trigger installtion for downloaded packages
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../com/sun/pkg/client/package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../com/sun/pkg/client/Image.FmriState.html" title="class in com.sun.pkg.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../com/sun/pkg/client/ImagePlanProgressTracker.html" title="class in com.sun.pkg.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?com/sun/pkg/client/Image.ImagePlan.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Image.ImagePlan.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

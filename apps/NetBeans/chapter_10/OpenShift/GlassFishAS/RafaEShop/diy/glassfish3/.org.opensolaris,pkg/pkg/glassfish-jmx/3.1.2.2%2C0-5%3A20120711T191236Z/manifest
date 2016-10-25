@@ -1,0 +1,13 @@
+set name=fmri value=pkg:/glassfish-jmx@3.1.2.2,0-5:20120711T191236Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish Appserver Management eXtensions package.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish JMX Related Package"
+depend fmri=pkg:/glassfish-nucleus type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file edb2a9ba878a9bd1fc91d3935bfdea53526f769e chash=1043ac6f9422b3c7b574b71231147238ff70683e group=sys mode=0644 owner=root path=glassfish/modules/jmxremote_optional-repackaged.jar pkg.csize=218450 pkg.size=242266
+file 42fa784caa0b7ec9d2012a0ed5ac1d36ebd820e3 chash=f17806d312409de76ca36e6f32089ada8b205031 group=sys mode=0644 owner=root path=glassfish/modules/javax.management.j2ee.jar pkg.csize=21865 pkg.size=27955
+file 9c340996dd8b209db9540971e1186b227589a8d8 chash=db89863c16774e88b0839070358822f44e088255 group=sys mode=0644 owner=root path=glassfish/modules/amx-all.jar pkg.csize=562470 pkg.size=645746
+file 7fd5a2be0018e205d4a8205b7789c37ec9a6d5f9 chash=c795513fcddb37ae88621dbbc2860557ff0d2bd4 group=sys mode=0644 owner=root path=glassfish/modules/glassfish-mbeanserver.jar pkg.csize=53299 pkg.size=59393
+set name=publisher value=stable.glassfish.org

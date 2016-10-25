@@ -1,0 +1,11 @@
+set name=fmri value=pkg:/glassfish-jta@3.1.2.2,0-5:20120711T191159Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish JTA package provides support for local (non-xa) transactions. For more information on Java Transaction API (JTA), please refer to http://java.sun.com/javaee/technologies/jta/.  GlassFish Server is a modular, lightweight, and extensible Java EE 6 application server built on OSGi. Key features include fast startup time, improved developer productivity, hybrid OSGi/Java EE applications, high availability clustering, centralized administration, and overall ease-of-use."
+set name=pkg.summary value="GlassFish Local Transaction Support"
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0755 owner=root path=glassfish
+dir group=sys mode=0755 owner=root path=glassfish/modules
+file 0ae0bbd2fa7baf391c93e479f863fbe758be0789 chash=e03f9424342601b932959fc8b3b8f9ece4325ce1 group=sys mode=0644 owner=root path=glassfish/modules/jta.jar pkg.csize=59974 pkg.size=65215
+dir group=sys mode=0755 owner=root path=glassfish/modules/autostart
+set name=publisher value=stable.glassfish.org
